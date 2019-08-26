@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+.clearfix{overflow: auto}
+.wrapper{
+	width: "100%";
+}
+
+header{
+
+	background-color:mediumturquoise;
+	height: 150px;	
+}
+
+div.introduction{
+	margin-left: 350px;
+}
+
+nav{
+	text-align: center;
+	margin-top: 15px; 
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	margin-top: 10px; margin-bottom: 10px;
+	margin-left: 50px; margin-right: 50px;
+	display: inline-block
+
+}
+nav ul li a:hover{
+	color: rgb(9, 135, 185);
+}
+
+aside { 
+	float: left; 
+	width: 300px;  
+	height: 500px;
+} 
+
+div.content{
+	margin-left: 70px;
+	margin-top: 115px;
+}
+
+.w3-circle {
+	 position: absolute; top: 50px; left: 70px;
+}
+div.name{
+	font-weight: 500;
+	font-size: 270%;
+	padding-top: 45px;
+}
+div.position{
+	padding-top: -10px;
+	font-size: 180%;
+}
+
+div.footer-bar{
+	position: absolute;
+	margin-left: 42%;
+
+}
