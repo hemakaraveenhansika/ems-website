@@ -1,0 +1,39 @@
+td{
+    height: 35px;
+}
+
+table{
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+div.detail{
+    margin-left: 350px;
+}
+
+div.footer-bar{
+	position: absolute;
+	margin-left: 43%;
+    margin-top: 30px;
+}
+
+.btn-circle, .btn-circle-3d{
+    border-radius: 50% !important;
+  }
+  
+  .btn-primary.btn-circle{
+    -webkit-box-shadow: 0px 0px 3px 1px #245580;
+    -moz-box-shadow:    0px 0px 3px 1px #245580;
+    box-shadow:         0px 0px 3px 1px #245580;
+  }
+
+  div.btn{
+      margin-left: 26%;
+      margin-top: 50px;
+  }
+
+  div.add{
+    margin-left: 20px;
+  }
+
+  

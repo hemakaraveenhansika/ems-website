@@ -8,18 +8,24 @@ a{text-decoration: none;}
 }
 
 header{
-
 	background-color:mediumturquoise;
 	height: 150px;	
 }
 
 div.introduction{
+
 	margin-left: 350px;
+	font-size: 16.5px;
+}
+
+nav ul li a:hover,nav ul li a:focus {
+	text-decoration: none;
 }
 
 nav{
 	text-align: center;
 	margin-top: 15px; 
+	margin-left: 110px;
 }
 nav ul{
 	list-style: none;
@@ -32,7 +38,9 @@ nav ul li a{
 	text-transform: uppercase;
 	margin-top: 10px; margin-bottom: 10px;
 	margin-left: 50px; margin-right: 50px;
-	display: inline-block
+	display: inline-block;
+	font-weight: bolder;
+	font-size: 17px;
 
 }
 nav ul li a:hover{
@@ -61,10 +69,5 @@ div.name{
 div.position{
 	padding-top: -10px;
 	font-size: 180%;
-}
-
-div.footer-bar{
-	position: absolute;
-	margin-left: 42%;
-
+	
 }

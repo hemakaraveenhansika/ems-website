@@ -8,7 +8,7 @@
                 <li><a href="#">Employement</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Leave</a></li>
-                <li><a href="#">Document</a></li>
+                <li><a href="document.php">Document</a></li>
             </ul>
         </nav>
     </div>                
