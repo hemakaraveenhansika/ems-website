@@ -1,11 +1,10 @@
 ul li a{
 	color: rgb(0, 0, 0);
-	text-transform: uppercase;	
 	margin-left: 400px; margin-right: 50px;
     display: inline-block;
     text-decoration: none;
-	font-weight: bolder;
-	font-size: 15px;
+	font-weight: 700;
+	font-size: 18px;
 }
 
 li a:hover{
@@ -21,5 +20,5 @@ ul{
 }
 
 div.links{
-    margin-top: 150px;
+    margin-top: 120px;
 }

@@ -1,3 +1,7 @@
+.title{
+	font-weight: bold;
+	color: rgb(3, 177, 180);
+}
 td{
     height: 35px;
 }
@@ -13,8 +17,8 @@ div.detail{
 
 div.footer-bar{
 	position: absolute;
-	margin-left: 43%;
-    margin-top: 30px;
+    top: 680px;
+    left: 42%;
 }
 
 .btn-circle, .btn-circle-3d{

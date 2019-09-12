@@ -68,6 +68,15 @@ div.name{
 }
 div.position{
 	padding-top: -10px;
-	font-size: 180%;
-	
+	font-size: 180%;	
+}
+
+.current-link-nav {
+    color:rgb(9, 135, 185);
+}
+
+div.footer-bar{
+	position: absolute;
+    top: 680px;
+    left: 42%;
 }

@@ -1,0 +1,68 @@
+.title{
+	font-weight: bold;
+	color: rgb(3, 177, 180);
+}
+
+.table-detail{
+    padding-left: 370px;
+}
+
+tr{
+    height: 30px;
+}
+td.clock{
+    display: flex !important; 
+}
+
+input.form-control{
+    width: 100px !important;
+    height: 25px;
+}
+
+.date{
+    height: 25px;;
+}
+
+.opacity {
+	opacity: 0;
+    width: 0;		/* for internet explorer */   
+}
+
+input[type=radio]+label {
+    font-weight: normal;
+    color: black;
+}
+input[type=radio]:checked+label {
+    color: rgb(19, 200, 224);
+
+}
+
+div.select{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.last-raw{
+    margin-top: 30px;
+}
+
+.btn-circle, .btn-circle-3d{
+    border-radius: 50% !important;
+  }
+
+div.btn{
+    margin-left: 29%;
+    margin-top: 20px;
+}
+
+div.btn-view{
+    margin-left: 26%;
+    margin-top: 20px;
+}
+
+div.footer-bar{
+	position: absolute;
+    top: 780px;
+    left: 42%;
+}

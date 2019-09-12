@@ -27,7 +27,7 @@
 
         <div class="detail">
             <form id="fupForm" enctype="multipart/form-data">
-                <h3>Upload Document</h3>
+                <h3 class="title">Upload Document</h3>
                 <div class="table-detail">
                     <table>
                         <col width="30">
@@ -36,27 +36,27 @@
                         <tr>
                             <td>01.</td>
                             <td>Employee ID</td>
-                            <td>*********</td>
+                            <td>: EID0002</td>
                         </tr>
                         <tr>
                             <td>02.</td>
                             <td>Employee Name</td>
-                            <td>*********</td>
+                            <td>: M.T. Dasanayaka</td>
                         </tr><tr>
                             <td>03.</td>
                             <td>Destination</td>
-                            <td>*********</td>
+                            <td>: HR Manager</td>
                         </tr><tr>
                             <td>04.</td>
                             <td>Department</td>
-                            <td>*********</td>
+                            <td>: HR Department</td>
                         </tr><tr>
                             <td>05.</td>
                             <td>Added Date</td>
-                            <td>*********</td>
+                            <td>: 2019/09/04</td>
                         </tr><tr>
                             <td>06.</td>
-                            <td>Type of Document</td>
+                            <td>Input Document</td>
                             <td>
                                 <div class="form-group">
                                     <input type="file" id="file" name="file" required />
@@ -64,7 +64,7 @@
                             </td>
                         </tr>
                     </table> 
-            </div>
+                </div>
 
             <div class="btn">
                 <div class="add">
@@ -85,7 +85,7 @@
             </form>
         </div>
         
-        <?php require_once('codeblocks/footer.php'); ?>
+        <?php //require_once('codeblocks/footer.php'); ?>
 
 	</div>
 <body>
