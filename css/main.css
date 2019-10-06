@@ -7,9 +7,15 @@ a{text-decoration: none;}
 	width: "100%";
 }
 
+.title{
+	font-weight: bold;
+	color: rgb(3, 177, 180);
+}
+
+
 header{
-	background-color:mediumturquoise;
-	height: 150px;	
+	background-image:url("../img/background-index.jpg");
+	height: 150px;
 }
 
 div.introduction{
@@ -57,7 +63,9 @@ div.content{
 	margin-left: 70px;
 	margin-top: 115px;
 }
-
+navbar-header{
+    margin-right: 0;
+}
 .w3-circle {
 	 position: absolute; top: 50px; left: 70px;
 }
@@ -68,6 +76,19 @@ div.name{
 }
 div.position{
 	padding-top: -10px;
-	font-size: 180%;
-	
+	font-size: 180%;	
+}
+
+.current-link-nav {
+    color:rgb(9, 135, 185);
+}
+
+
+.footer{
+margin-top: 40px;
+margin-bottom: 20px;
+left: 25%;
+    position: relative;
+    z-index: 1;
+
 }

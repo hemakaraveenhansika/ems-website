@@ -1,7 +1,7 @@
 ul li a{
 	color: rgb(0, 0, 0);
 	text-transform: uppercase;	
-	margin-left: 400px; margin-right: 50px;
+	margin-left: 410px; margin-right: 50px;
     display: inline-block;
     text-decoration: none;
 	font-weight: bolder;
@@ -24,8 +24,10 @@ div.links{
     margin-top: 150px;
 }
 
-div.footer-bar{
+.footer{
+    top:86% !important;
+	left:44%;
 	position: absolute;
-	margin-left: 43%;
-    margin-top: 250px;
+	z-index: 1;
+
 }

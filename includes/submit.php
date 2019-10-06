@@ -1,5 +1,6 @@
 <?php
-$eid=1; 
+$eid=$_POST["eid"];
+$getType=$_POST["getType"];
 $uploadDir = '../uploads/'; 
 $response = array( 
     'status' => 0, 
@@ -28,7 +29,7 @@ if(true || isset($_POST['file'])){
             } 
         }else{ 
             $uploadStatus = 0; 
-            $response['message'] = 'Sorry, only PDF, DOC, JPG, JPEG, & PNG files are allowed to upload.'; 
+            $response['message'] = 'Sorry, only PDF, DOC, ppt files are allowed to upload.'; 
         } 
     } 
              
@@ -37,11 +38,12 @@ if(true || isset($_POST['file'])){
         include_once '../administrator/dbConfig.php'; 
                  
         // Insert form data in the database 
-        $insert = $db->query("INSERT INTO document (eid,file_name,file_type) VALUES ('".$eid."','".$uploadedFile."','".$fileType."')"); 
-                 
+        $insert = $db->query("INSERT INTO document (employee_ID,file_name,file_type,select_type) VALUES ('".$eid."','".$uploadedFile."','".$fileType."','".$getType."')");
+        
+        
         if($insert){ 
             $response['status'] = 1; 
-            $response['message'] = 'Form data submitted successfully!'; 
+            $response['message'] = 'Form data submitted successfully!';
         } 
     } 
          
