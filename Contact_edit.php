@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php session_start();?>
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 <?php
 require "JsFunction.php";
 ?>
@@ -16,6 +19,7 @@ require "JsFunction.php";
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <style>
@@ -83,22 +87,37 @@ require "JsFunction.php";
         </style>
         
    <?php require_once('codeblocks/notification.php'); ?>
+=======
+        
+    </head>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
 
 	<div class="wrapper">
         <?php require_once('codeblocks/head.php'); ?>
+<<<<<<< HEAD
         <?php require_once ('codeblocks/image_insert.php'); ?>
+=======
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         <?php require_once('codeblocks/navigation.php'); ?>
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
         <div id="Contact_edit" class="edit_tabs">
         <table>
             <tr>
+<<<<<<< HEAD
                 <td  class="Lable">Address :  </td>
                 <td><input id="Address_edit" type="text"></td>
                 <td><p class="error-para" id="Address_error"></p></td>
@@ -133,6 +152,31 @@ require "JsFunction.php";
                     </div><td>
             </tr>
             <tr><p style="font-size:20px;color:green" id="return_contact"></p></tr>
+=======
+                <td>Address :  </td>
+                <td><input id="Address_edit" type="text"></td>
+            </tr>
+            <tr>
+                <td>Country: </td>
+                <td><input id="Country_edit" type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><input id="Phone_edit" type="text"></td>
+            </tr>
+            <tr>
+                <td>Mobile: </td>
+                <td><input id="Mobile_edit" type="text"></td>
+            </tr>
+            <tr>
+                <td>E-mail: </td>
+                <td><input id="E_mail_edit" type="email"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="contact_edit_button" value="Request to Admin for Changing" "><td>
+            </tr>
+            <tr><p id="return_contact"></p></tr>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         </table>
 </div>
 
@@ -142,6 +186,10 @@ require "JsFunction.php";
 <body>
 </body>
 </html>
+<<<<<<< HEAD
 <script>
     Edit_Contact();
 </script>
+=======
+<script>Edit_Contact();</script>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248

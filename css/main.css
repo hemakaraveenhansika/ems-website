@@ -83,6 +83,7 @@ div.position{
     color:rgb(9, 135, 185);
 }
 
+<<<<<<< HEAD
 
 .footer{
 margin-top: 40px;
@@ -91,4 +92,10 @@ left: 25%;
     position: relative;
     z-index: 1;
 
+=======
+div.footer-bar{
+	position: absolute;
+    top: 680px;
+    left: 42%;
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 }

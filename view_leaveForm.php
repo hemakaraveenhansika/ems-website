@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 <?php session_start();?>
 <?php
     $e_id_ses=$_SESSION["e_id"];
     $conn = require_once("administrator/dbConfig.php");
     $sql = "SELECT * FROM employee WHERE employee_ID='$e_id_ses'";
+=======
+<?php
+    $conn = require_once("administrator/dbConfig.php");
+    $sql = "SELECT * FROM employee WHERE Num_Employee=1";
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);
 
@@ -15,11 +21,14 @@
     $reason=$_REQUEST['reason'];
     $assign=$_REQUEST['assign'];
     $status='<font color="red">' . 'Pending' . '</font>';
+<<<<<<< HEAD
 
     $getAdminID=$assign;
     $admin_sql = "SELECT * FROM admin WHERE a_id='$getAdminID'";
     $admin_result=mysqli_query($conn, $admin_sql);
     $admin_row = mysqli_fetch_assoc($admin_result);
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 ?>
 
 <!doctype html>
@@ -36,21 +45,37 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
         
+<<<<<<< HEAD
     <?php require_once('codeblocks/notification.php'); ?>
+=======
+    </head>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
 
 	<div class="wrapper">
         <?php require_once('codeblocks/head.php'); ?>
+<<<<<<< HEAD
         <?php require_once ('codeblocks/image_insert.php'); ?>
+=======
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         <?php require_once('codeblocks/navigation.php'); ?>
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
 
         <form name="form1" id="form1" method="post" >
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+
+        <form  method="post">
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
             <div class="table-detail">
                 <h3 class="title">Schedule Leave</h3>
                 <table>
@@ -65,7 +90,11 @@
                     <tr>
                         <td>02.</td>
                         <td>Employee ID</td>
+<<<<<<< HEAD
                         <td >: <span id="eid" name="eid"><?php echo $row['employee_ID'] ?></span> </td>
+=======
+                        <td >: <span id="eid" name="eid"><?php echo $row['Num_Employee'] ?></span> </td>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                     </tr>
                     <tr>
                         <td>03.</td>
@@ -120,7 +149,11 @@
                 <tr>
                         <td width="100">Assed by</td>
                         <td width="500">: 
+<<<<<<< HEAD
                             <?php echo $admin_row['a_name']; ?>
+=======
+                            <?php echo $assign; ?>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                         </td>
                         <td width="50">Status</td>
                         <td id="status" width="200">: <?php echo $status; ?></td>
@@ -130,7 +163,11 @@
                 <div class="btn-view">
                     <button class="btn btn-lg btn-primary btn-circle" type=button  onClick="window.history.back()"><i class="fa fa-arrow-left"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
                     <button class="btn btn-lg btn-primary btn-circle" type=button  onClick="window.location.href='/ems-website/leave.php'"><i class="fa fa-times"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
                     <button type="submit" name="submitbutton" class="btn btn-lg btn-primary btn-circle" onClick="window.location.href='leave.php'"><i class="fa fa-arrow-right"></i></button>
+=======
+                    <button type="submit" name="submitbutton" class="btn btn-lg btn-primary btn-circle"><i class="fa fa-arrow-right"></i></button>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                 </div>
 
                 <input class="opacity" type="hidden" name="radio1" id="inlineRadio1" value="<?php echo $leaveType; ?>">
@@ -151,6 +188,7 @@
 <body>
 </body>
 </html>                
+<<<<<<< HEAD
 
 
 
@@ -158,21 +196,41 @@
   
     $req_date=date("Y-m-d");
     $eid=$row['employee_ID'];
+=======
+ 
+
+<?php
+
+    $conn = require_once("administrator/dbConfig.php");
+    $req_date=date("Y-m-d");
+    $eid=$row['Num_Employee'];
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
     $eName=$row['Full_Name'];
     $dept=$row['Department'];
     if (isset($_POST['submitbutton'])){
         //$sql = "INSERT INTO leave_table(leave_type ) VALUES ($leaveType)";
+<<<<<<< HEAD
 //        $conn = new mysqli('localhost', 'root', '', 'project_ems');
         // Check connection
 //        if ($conn->connect_error) {
 //            die("Connection failed: " . $conn->connect_error);
 //        }
+=======
+        $conn = new mysqli('localhost', 'root', '', 'ems_database');
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         
         $sql = "INSERT INTO leave_table(date_of_request,employee_ID,employee_name,Department,leave_type,leave_date_from,leave_date_to,no_of_days,time_from,time_to,reason,assesd_by) VALUES ('$req_date','$eid','$eName','$dept','$leaveType','$dateFrom','$dateTo','$dateNo','$timeFrom','$timeTo','$reason','$assign')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
+<<<<<<< HEAD
             echo "<script> location.href='leave.php'; </script>";
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -180,4 +238,12 @@
         $conn->close();
     }
  
+<<<<<<< HEAD
+=======
+    
+
+    
+
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 ?>

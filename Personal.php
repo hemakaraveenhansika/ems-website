@@ -1,12 +1,24 @@
+<<<<<<< HEAD
 <?php session_start(); ?>
 <?php if(!isset($_SESSION['e_id'])){
     header('Location: login.php');
 } ?>
+=======
+<?php
+require "JsFunction.php";
+?>
+
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
+<<<<<<< HEAD
         <title>EMS - Personal</title>
+=======
+        <title>EMS - Document</title>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
         <link rel="stylesheet" type="text/css" href="CSS/pec.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -75,6 +87,7 @@
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
@@ -129,6 +142,56 @@
         
     </body>
         <?php require_once('codeblocks/footer.php'); ?>
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+
+        <div  id="Personal" class="tabcontain">
+            <table>
+                <tr>
+                    <td>1.Title</td>
+                    <td id="Title"></td>
+                </tr>
+                <tr>
+                    <td>2.Full Name</td>
+                    <td id="Full_Name"></td>
+                </tr>
+                <tr>
+                    <td>3.Date Of Birth</td>
+                    <td id="Date_Of_Birth"></td>
+                </tr>
+                <tr>
+                    <td>4.Gender</td>
+                    <td id="Gender"></td>
+                </tr>
+                <tr>
+                    <td>5.NIC</td>
+                    <td id="NIC"></td>
+                </tr>
+                <tr>
+                    <td>6.Marital status</td>
+                    <td id="Marital_Status"></td>
+                </tr>
+                <tr>
+                    <td>7.Nationality</td>
+                    <td id="Nationality"></td>
+                </tr>
+                <tr>
+                    <td>8.Religion</td>
+                    <td id="Religion"></td>
+                </tr>
+            </table>
+
+            <a id="personal" href="Personal_edit.php">Request to change</a>
+            <!-- <a onclick="Edit_Personal()">Request Changes</button> -->
+
+        </div>
+    </div>
+       
+    <?php require_once('codeblocks/footer.php'); ?>
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 </html>
 
 <script>Open("Personal");</script>

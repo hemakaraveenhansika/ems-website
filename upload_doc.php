@@ -47,11 +47,16 @@ $row = mysqli_fetch_assoc($result);
                         <tr>
                             <td>01.</td>
                             <td>Employee ID</td>
+<<<<<<< HEAD
                             <td>: <?php echo $row['employee_ID'] ?></td>
+=======
+                            <td>: EID0002</td>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                         </tr>
                         <tr>
                             <td>02.</td>
                             <td>Employee Name</td>
+<<<<<<< HEAD
                             <td>: <?php echo $row['Full_Name'] ?></td>
                         </tr><tr>
                             <td>03.</td>
@@ -65,9 +70,24 @@ $row = mysqli_fetch_assoc($result);
                             <td>05.</td>
                             <td>Added Date</td>
                             <td>: <?php echo date("Y-m-d"); ?></td>
+=======
+                            <td>: M.T. Dasanayaka</td>
+                        </tr><tr>
+                            <td>03.</td>
+                            <td>Destination</td>
+                            <td>: HR Manager</td>
+                        </tr><tr>
+                            <td>04.</td>
+                            <td>Department</td>
+                            <td>: HR Department</td>
+                        </tr><tr>
+                            <td>05.</td>
+                            <td>Added Date</td>
+                            <td>: 2019/09/04</td>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                         </tr><tr>
                             <td>06.</td>
-                            <td>Type of Document</td>
+                            <td>Input Document</td>
                             <td>
                                 <div class="form-group">
                                     : <select name="getType" id="getType">
@@ -81,7 +101,10 @@ $row = mysqli_fetch_assoc($result);
                             </td>
                         </tr>
                     </table> 
+<<<<<<< HEAD
                     <input type="hidden" id="eid" name="eid" value="<?php echo $row['employee_ID'];?>">
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                 </div>
 
             <div class="btn">

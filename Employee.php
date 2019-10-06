@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php session_start();?>
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 <?php
 require "JsFunction.php";
 ?>
@@ -15,6 +18,7 @@ require "JsFunction.php";
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
         .Lable{
@@ -71,18 +75,33 @@ require "JsFunction.php";
 	<div class="wrapper">
         <?php require_once('codeblocks/head.php');
         require_once ('codeblocks/image_insert.php');?>
+=======
+        
+    </head>
+
+
+	<div class="wrapper">
+        <?php require_once('codeblocks/head.php'); ?>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
         <?php require_once('codeblocks/navigation.php'); ?>
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
         <div  id="Employee" class="tabcontain">
             <table>
                 <tr>
+<<<<<<< HEAD
                     <td class="Lable">1.Date Of Joinning</td>
                     <td id="Date_Of_Joinning"></td>
                 </tr>
@@ -105,6 +124,27 @@ require "JsFunction.php";
                 </button>
                 <label for="person" class="button_para">Request to Change</label>
             </div>
+=======
+                    <td>1.Date Of Joinning</td>
+                    <td id="Date_Of_Joinning"></td>
+                </tr>
+                <tr>
+                    <td>2.Designation</td>
+                    <td id="Designation"></td>
+                </tr>
+                <tr>
+                    <td>3.Employee Type</td>
+                    <td id="Employee_type"></td>
+                </tr>
+                <tr>
+                    <td>4.Department</td>
+                    <td id="Department"></td>
+                </tr>
+            </table>
+
+            <a id="employee" href="Employee_edit.php">Request to change</a>
+            <!-- <button onclick="Edit_Employee()">Request Changes</button> -->
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         </div>
     </div>
 

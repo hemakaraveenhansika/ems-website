@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php session_start();?>
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 <?php
 require "JsFunction.php";
 ?>
@@ -16,6 +19,7 @@ require "JsFunction.php";
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <style>
@@ -81,22 +85,37 @@ require "JsFunction.php";
 }
         </style>
     <?php require_once('codeblocks/notification.php'); ?>
+=======
+        
+    </head>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
 
 	<div class="wrapper">
         <?php require_once('codeblocks/head.php'); ?>
+<<<<<<< HEAD
         <?php require_once ('codeblocks/image_insert.php'); ?>
+=======
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         <?php require_once('codeblocks/navigation.php'); ?>
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
         <div id="Employee_edit" class="edit_tabs">
         <table>
             <tr>
+<<<<<<< HEAD
                 <td class="Lable">Date Of Joinning :  </td>
                 <td><input id="Date_Of_Joinning_edit" type="date" disabled></td>
             </tr>
@@ -107,12 +126,24 @@ require "JsFunction.php";
             </tr>
             <tr>
                 <td class="Lable">Employee type: </td>
+=======
+                <td>Date Of Joinning :  </td>
+                <td><input id="Date_Of_Joinning_edit" type="date"></td>
+            </tr>
+            <tr>
+                <td>Designation: </td>
+                <td><input id="Designation_edit" type="text"></td>
+            </tr>
+            <tr>
+                <td>Employee type: </td>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                 <td><select id="Employee_type_edit">
                         <option value="Part Time">Part Time</option>
                         <option value="Full Time">Full Time</option>
                     </select></td>
             </tr>
             <tr>
+<<<<<<< HEAD
                 <td class="Lable">Department: </td>
                 <td><input id="Department_edit" type="text"></td>
                 <td><p class="error-para" id="Department_error"></p></td>
@@ -128,6 +159,15 @@ require "JsFunction.php";
                 <td>
             </tr>
             <tr><p style="font-size:20px;color:green" id="return_employee"></p></tr>
+=======
+                <td>Department: </td>
+                <td><input id="Department_edit" type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="employee_edit_button" value="Request to Admin for Changing" "><td>
+            </tr>
+            <tr><p id="return_employee"></p></tr>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         </table>
 </div>
 
@@ -136,6 +176,10 @@ require "JsFunction.php";
 <body>
 </body>
 </html>
+<<<<<<< HEAD
 <script>
         Edit_Employee();  
 </script>
+=======
+<script>Edit_Employee();</script>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248

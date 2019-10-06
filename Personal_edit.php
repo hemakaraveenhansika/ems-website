@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 <?php session_start();?>
 <?php
 require "JsFunction.php";
 ?>
+=======
+<?php
+require "JsFunction.php";
+?>
+
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 <!doctype html>
 <html>
     <head>
@@ -14,6 +22,7 @@ require "JsFunction.php";
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <style>
@@ -86,17 +95,33 @@ require "JsFunction.php";
 	<div class="wrapper">
         <?php require_once('codeblocks/head.php'); ?>
         <?php require_once ('codeblocks/image_insert.php'); ?>
+=======
+        
+    </head>
+
+
+	<div class="wrapper">
+        <?php require_once('codeblocks/head.php'); ?>
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         <?php require_once('codeblocks/navigation.php'); ?>
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
         <div id="Personal_edit" class="edit_tabs">
             <table>
                 <tr>
+<<<<<<< HEAD
                     <td class="Lable">Title :  </td>
                     <td><input id="Title_edit" type="text" name="Title"></td>
                     <td><p class="error-para" id="Title_error"></p></td>
@@ -113,6 +138,21 @@ require "JsFunction.php";
                 </tr>
                 <tr>
                     <td class="Lable">Gender: </td>
+=======
+                    <td>Title :  </td>
+                    <td><input id="Title_edit" type="text" name="Title"></td>
+                </tr>
+                <tr>
+                    <td>Full Name: </td>
+                    <td><input id="Full_Name_edit" type="text" name="Full_Name"></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth: </td>
+                    <td><input id="Date_Of_Birth_edit" type="date" name="Date_Of_Birth"></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                     <td><select id="Gender_edit" name="Gender">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -120,6 +160,7 @@ require "JsFunction.php";
                         </select></td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <td class="Lable">NIC: </td>
                     <td><input id="NIC_edit" type="text" name="NIC"></td>
                     <td><p class="error-para" id="NIC_error"></p></td>
@@ -127,12 +168,20 @@ require "JsFunction.php";
                 </tr>
                 <tr>
                     <td class="Lable">Marital status: </td>
+=======
+                    <td>NIC: </td>
+                    <td><input id="NIC_edit" type="text" name="NIC"></td>
+                </tr>
+                <tr>
+                    <td>Marital status: </td>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                     <td><select id="Marital_Status_edit" name="Marital_Status">
                             <option value="Married">Married</option>
                             <option value="Single">Single</option>
                         </select></td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <td class="Lable">Nationality: </td>
                     <td><input id="Nationality_edit" type="text" name="Nationality"></td>
                     <td><p class="error-para" id="Nationality_error"></p></td>
@@ -162,3 +211,25 @@ require "JsFunction.php";
 <script>
     Edit_Personal();
 </script>
+=======
+                    <td>Nationality: </td>
+                    <td><input id="Nationality_edit" type="text" name="Nationality"></td>
+                </tr>
+                <tr>
+                    <td>Religion: </td>
+                    <td><input id="Religion_edit" type="text" name="Religion"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="personal_edit_button" value="Request to Admin for Changing" /><td>
+                </tr>
+                <tr><p id="return_personal"></p></tr>
+            </table>
+</div>
+
+        
+        <?php require_once('codeblocks/footer.php'); ?>
+<body>
+</body>
+</html>
+<script>Edit_Personal();</script>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248

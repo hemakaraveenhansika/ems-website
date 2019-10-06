@@ -2,13 +2,35 @@
 $e_id_ses=$_SESSION["e_id"];
 ?>
 <?php
+<<<<<<< HEAD
     $conn =require_once("administrator/dbConfig.php");
     $getType='Personal';
 
+=======
+    require_once("administrator/dbConfig.php");
+    $conn = mysqli_connect("localhost", "root", "", "ems_database");
+    $sql = "SELECT file_type FROM document WHERE eid=1";
+    $result = mysqli_query($conn, $sql);
+    $types_ext = array("");
+    while($row = mysqli_fetch_assoc($result)){
+        array_push($types_ext,$row['file_type']); 
+    }
+    $dup_type=array_unique($types_ext);
+    $allow_type = array_values($dup_type);
+    //$types_ext = array('','pdf', 'doc', 'docx','odp','ods','odt','ppt','pptx','txt','xls','xlsx'); 
+    $types = array('','pdf'=>'PDF', 'doc'=>'Microsoft Word', 'docx'=>'Microsoft Word (OpenXML)','odp'=>'Open Document presentation','ods'=>'Open Document spreadsheet','odt'=>'Open Document text','ppt'=>'Microsoft PowerPoint','pptx'=>'Microsoft PowerPoint (OpenXML)','txt'=>'Text','xls'=>'Microsoft Excel','xlsx'=>'Microsoft Excel (OpenXML)');
+    $pages=sizeof($allow_type);
+    $getType='';
+    $current=1;
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
     $url=$_SERVER['REQUEST_URI'];
     $str_arr = explode ("=", $url);
     if (sizeof($str_arr)>1){      
         $getType=$str_arr[1];
+<<<<<<< HEAD
+=======
+        $current = array_search($getType, $allow_type);
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
     }
   
     $sql = "SELECT * FROM document  WHERE select_type='$getType' AND employee_ID='$e_id_ses'  ORDER BY doc_id DESC";
@@ -45,6 +67,7 @@ $e_id_ses=$_SESSION["e_id"];
         <div class="view-content">
             <h3 class="title">View Document</h3>    
         
+<<<<<<< HEAD
             <div class="no-margin" >
                 <div class="pagination text-small text-uppercase text-extra-dark-gray">
                     <ul class="no-margin">
@@ -55,6 +78,28 @@ $e_id_ses=$_SESSION["e_id"];
                             echo '<li ><a id="Offical" href="view_doc.php?type=Offical">Offical</a></li>';  
                         ?>
 
+=======
+            <div class="no-margin" <?php if($pages == 0){ echo 'hidden';}?>>
+                <div class="pagination text-small text-uppercase text-extra-dark-gray">
+                    <ul class="no-margin">
+                    <li><a  href="<?php if ($current>1){echo 'view_doc.php?type='.$allow_type[($current-1)];}else{echo 'javascript:void(0);'; }?>"><i class="fas fa-long-arrow-alt-left margin-5px-right xs-display-none"></i> Prev</a></li>
+                        <?php     
+                            if($current==1 || $current==2){
+                                for ($x = 1; $x <4; $x++) {
+                                    echo '<li ><a id="'.$allow_type[$x].'" href="view_doc.php?type='.$allow_type[$x].'">' . $types[$allow_type[$x]] . '</a></li>';                                   
+                                }
+                            }elseif ($current==($pages-2) || $current==$pages-1) {
+                                for ($x = $pages-3; $x <($pages); $x++) {
+                                    echo '<li ><a id="'.$allow_type[$x].'" href="view_doc.php?type='.$allow_type[$x].'">' . $types[$allow_type[$x]] . '</a></li>';                                   
+                                }
+                            }else{
+                                for ($x = ($current-1); $x <($current+2); $x++) {
+                                    echo '<li ><a id="'.$allow_type[$x].'" href="view_doc.php?type='.$allow_type[$x].'">' . $types[$allow_type[$x]] . '</a></li>';                                   
+                                }
+                            }
+                        ?>
+                    <li><a href="<?php if ($current<$pages-1){echo 'view_doc.php?type='.$allow_type[($current+1)];}else{echo 'javascript:void(0);'; }?>"><i class="fas fa-long-arrow-alt-left margin-5px-right xs-display-none"></i> Next</a></li>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
                     </ul>
                 </div>
             </div>
@@ -83,6 +128,7 @@ $e_id_ses=$_SESSION["e_id"];
 </html>
 
 <script>
+<<<<<<< HEAD
     var type="<?php echo $getType ?>";
     if(type=="Personal"){
         var element=document.getElementById("PersonalTag");
@@ -90,4 +136,8 @@ $e_id_ses=$_SESSION["e_id"];
         var element = document.getElementById(type);
     }
     element.classList.add("current-link");
+=======
+var element = document.getElementById("<?php echo $getType ?>");
+element.classList.add("current-link");
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 </script>

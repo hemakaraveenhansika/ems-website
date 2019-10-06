@@ -1,5 +1,6 @@
 <?php
 require "database.php";
+<<<<<<< HEAD
 $emp_id=$_SESSION['e_id'];
 $sql = "SELECT * FROM employee WHERE `employee_ID`='$emp_id'";
 $result = $db->query($sql);
@@ -318,6 +319,15 @@ $code_array = json_encode($row);
         
     $("#personal_edit_button").click(function() {
         document.getElementById("return_personal").innerHTML="";
+=======
+$code_array = json_encode($row);
+?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script>
+    var Data_array = <?php echo $code_array; ?>;
+    $(document).ready(function () {
+    $("#personal_edit_button").click(function() {
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         var Title= $("#Title_edit").val();
         var Full_Name= $("#Full_Name_edit").val();
         var Date_Of_Birth= $("#Date_Of_Birth_edit").val();
@@ -326,8 +336,12 @@ $code_array = json_encode($row);
         var Marital_Status= $("#Marital_Status_edit").val();
         var Nationality= $("#Nationality_edit").val();
         var Religion= $("#Religion_edit").val();
+<<<<<<< HEAD
         if((Title_error==false) && (Full_Name_error==false) && (Date_Of_Birth_error==false) && (NIC_error==false) &&(Nationality_error==false) && (Religion_error==false)){
             $.post("edit.php",{
+=======
+        $.post("edit.php",{
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
             Title:Title,
             Full_Name:Full_Name,
             Date_Of_Birth:Date_Of_Birth,
@@ -339,11 +353,16 @@ $code_array = json_encode($row);
         },function (data,status) {
             $("#return_personal").html(data);
         });
+<<<<<<< HEAD
         }
     });
     $("#employee_edit_button").click(function() {
         document.getElementById("return_employee").innerHTML="";
             if(Designation_error==false && Department_error==false){
+=======
+    });
+    $("#employee_edit_button").click(function() {
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
             var Date_Of_Joinning= $("#Date_Of_Joinning_edit").val();
             var Designation= $("#Designation_edit").val();
             var Employee_type= $("#Employee_type_edit").val();
@@ -356,11 +375,16 @@ $code_array = json_encode($row);
             },function (data,status) {
                 $("#return_employee").html(data);
             });
+<<<<<<< HEAD
             }
         });
     $("#contact_edit_button").click(function() {
         document.getElementById("return_contact").innerHTML="";
         if(Address_error==false && Country_error==false && Phone_error==false && Mobile_error==false && E_mail_error==false){
+=======
+        });
+    $("#contact_edit_button").click(function() {
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         var Address= $("#Address_edit").val();
         var Country= $("#Country_edit").val();
         var Phone= $("#Phone_edit").val();
@@ -375,11 +399,23 @@ $code_array = json_encode($row);
         },function (data,status) {
            $("#return_contact").html(data);
         });
+<<<<<<< HEAD
     }
         });
     });
     
     function Open(type) {
+=======
+        });
+    });
+    function Open(type) {
+        // tabcontent1 = document.getElementsByClassName("tabcontain");
+        // tabcontent2 = document.getElementsByClassName("edit_tabs");
+        // for (i = 0; i < tabcontent1.length; i++) {
+        //     tabcontent1[i].style.display = "none";
+        //     tabcontent2[i].style.display = "none";
+        // }
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         if(type=='Personal') {
             var array_personal = ["Title", "Full_Name", "Date_Of_Birth", "Gender", "NIC", "Marital_Status", "Nationality", "Religion"];
             var personal_detail = [Data_array.Title, Data_array.Full_Name, Data_array.Date_Of_Birth, Data_array.Gender, Data_array.NIC, Data_array.Marital_Status, Data_array.Nationality, Data_array.Religion];
@@ -399,9 +435,19 @@ $code_array = json_encode($row);
                 document.getElementById(array_contact[i]).innerHTML = ":  "+contact_detail[i];
             }
         }
+<<<<<<< HEAD
     }
     function Edit_Personal() {
         document.getElementById("return_personal").innerHTML='';
+=======
+        // document.getElementById(type).style.display = "block";
+    }
+    function Edit_Personal() {
+        // tabcontent = document.getElementById("Personal");
+        document.getElementById("return_personal").innerHTML='';
+        // tabcontent.style.display = "none";
+        // document.getElementById('Personal_edit').style.display = "block";
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         var array_personal_edit = ["Title_edit", "Full_Name_edit", "Date_Of_Birth_edit", "Gender_edit", "NIC_edit", "Marital_Status_edit", "Nationality_edit", "Religion_edit"];
         var personal_detail = [Data_array.Title, Data_array.Full_Name, Data_array.Date_Of_Birth, Data_array.Gender, Data_array.NIC, Data_array.Marital_Status, Data_array.Nationality, Data_array.Religion];
         for (var i=0;i<8;i++){
@@ -417,7 +463,14 @@ $code_array = json_encode($row);
         }
     }
     function Edit_Employee() {
+<<<<<<< HEAD
         document.getElementById("return_employee").innerHTML='';
+=======
+        // tabcontent = document.getElementById("Employee");
+        document.getElementById("return_employee").innerHTML='';
+        // tabcontent.style.display = "none";
+        // document.getElementById('Employee_edit').style.display = "block";
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         var array_employee_edit = ["Date_Of_Joinning_edit", "Designation_edit", "Employee_type_edit", "Department_edit"];
         var employee_detail = [Data_array.Date_Of_Joinning, Data_array.Designation, Data_array.Employee_type, Data_array.Department];
         for (var i=0;i<4;i++){
@@ -431,7 +484,14 @@ $code_array = json_encode($row);
 
     }
     function Edit_Contact() {
+<<<<<<< HEAD
         document.getElementById("return_contact").innerHTML='';
+=======
+        // tabcontent = document.getElementById("Contact");
+        document.getElementById("return_contact").innerHTML='';
+        // tabcontent.style.display = "none";
+        // document.getElementById('Contact_edit').style.display = "block";
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         var array_contact_edit = ["Address_edit", "Country_edit", "Phone_edit", "Mobile_edit", "E_mail_edit"];
         var contact_detail = [Data_array.Address, Data_array.Country, Data_array.Phone, Data_array.Mobile, Data_array.E_mail];
         for (var i=0;i<5;i++){
@@ -445,11 +505,19 @@ $code_array = json_encode($row);
             var personal_detail = [Data_array.Title, Data_array.Full_Name, Data_array.Date_Of_Birth, Data_array.Gender, Data_array.NIC, Data_array.Marital_Status, Data_array.Nationality, Data_array.Religion];
             if(document.getElementById(array_personal_edit[i]).value!=personal_detail[i]){
                 change_personal_array.push(array_personal_edit[i].slice(0,array_personal_edit[i].length-5)+":"+document.getElementById(array_personal_edit[i]).value);
+<<<<<<< HEAD
+=======
+                // console.log(array_personal_edit[i].slice(0,array_personal_edit[i].length-5));
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
             }
         }
         var json_personal=  JSON.stringify(change_personal_array);
 
         Open('Personal');
+<<<<<<< HEAD
     }  
             
+=======
+    }
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 </script>

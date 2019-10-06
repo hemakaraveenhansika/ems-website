@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php session_start();?>
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 <?php
 require "JsFunction.php";
 ?>
@@ -13,6 +16,7 @@ require "JsFunction.php";
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<<<<<<< HEAD
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
@@ -67,22 +71,39 @@ require "JsFunction.php";
         
         </style>
     <?php require_once('codeblocks/notification.php'); ?>
+=======
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        
+    </head>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
 
 	<div class="wrapper">
         <?php require_once('codeblocks/head.php'); ?>
+<<<<<<< HEAD
         <?php require_once ('codeblocks/image_insert.php'); ?>
+=======
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         <?php require_once('codeblocks/navigation.php'); ?>
         
         <?php require_once('codeblocks/side.php'); ?>
 
+<<<<<<< HEAD
 <!--        <div class="profile">-->
 <!--            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />-->
 <!--        </div>-->
+=======
+        <div class="profile">
+            <img src="img/profile_img/img1.png" class="w3-circle"  style="width:13%" />
+        </div>
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 
         <div  id="Contact" class="tabcontain">
             <table>
                 <tr>
+<<<<<<< HEAD
                     <td class="Lable">1.Address</td>
                     <td id="Address"></td>
                 </tr>
@@ -109,6 +130,32 @@ require "JsFunction.php";
                 </button>
                 <label for="person" class="button_para">Request to Change</label>
             </div>
+=======
+                    <td>1.Address</td>
+                    <td id="Address"></td>
+                </tr>
+                <tr>
+                    <td>2.Country</td>
+                    <td id="Country"></td>
+                </tr>
+                <tr>
+                    <td>3.Phone</td>
+                    <td id="Phone"></td>
+                </tr>
+                <tr>
+                    <td>4.Mobile</td>
+                    <td id="Mobile"></td>
+                </tr>
+                <tr>
+                    <td>5.E-mail</td>
+                    <td id="E_mail"></td>
+                </tr>
+            </table>
+
+            <a id="contact" href="Contact_edit.php">Request to change</a>
+            <!-- <button onclick="Edit_Contact()">Request Changes</button> -->
+
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
         </div>
     </div>
 

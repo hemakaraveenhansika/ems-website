@@ -11,6 +11,7 @@
             $page_name[0]="document";
             break;     
     }
+<<<<<<< HEAD
     switch($page_name[0]){
         case "Personal_edit":
             $page_name[0]="Personal";
@@ -37,6 +38,8 @@
             $page_name[0]="leave";
             break;
     }
+=======
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 ?>
 
 <div class="container">
@@ -56,5 +59,9 @@
 
 <script>
 var element = document.getElementById("<?php echo $page_name[0] ?>");
+<<<<<<< HEAD
  element.classList.add("current-link-nav");
+=======
+element.classList.add("current-link-nav");
+>>>>>>> 6308a536c40f1b0571f32e74beb2fb6c0a2b0248
 </script>
